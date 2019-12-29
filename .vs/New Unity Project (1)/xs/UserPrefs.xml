@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{E9F6A016-2E51-0BDE-BADE-0AF8BEBF4684}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/shooter.cs">
+    <Files>
+      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRPlayerController.cs" Line="219" Column="34" />
+      <File FileName="Assets/Scripts/shooter.cs" Line="14" Column="63" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

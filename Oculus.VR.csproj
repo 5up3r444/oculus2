@@ -145,11 +145,11 @@
     <None Include="Assets\Oculus\VR\Plugins\placeholder.txt" />
     <None Include="Assets\Oculus\VR\NOTICE.txt" />
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
-    <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/manuelveta/Documents/unity/New Unity Project (1)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>/Users/manuelveta/Documents/unity/New Unity Project (1)/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/Users/manuelveta/Documents/unity/New Unity Project (1)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/2019.3.0f3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

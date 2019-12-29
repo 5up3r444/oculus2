@@ -11,10 +11,10 @@ public class shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && Time.time >nextFire)
+        if((OVRInput.GetDown(OVRInput.Button.SecondaryTouchpad) || OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad)|| Input.GetKeyDown(KeyCode.I)) && Time.time >nextFire)
         {
             nextFire = Time.time + firerate;
-            Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+            Instantiate(bullet, gameObject.transform.position + Vector3.forward, gameObject.transform.rotation);
         }
     }
 }

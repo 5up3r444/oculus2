@@ -319,12 +319,12 @@ public class OVRPlayerController : MonoBehaviour
 
 		if (EnableLinearMovement)
 		{
-			bool moveForward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
-			bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
-			bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
-			bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+			bool moveForward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || (OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad)).y > 0.4f || (OVRInput.Get(OVRInput.Axis2D.SecondaryTouchpad)).y > 0.4f;
+            bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || (OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad)).x < -0.4f || (OVRInput.Get(OVRInput.Axis2D.SecondaryTouchpad)).x < -0.4f;
+			bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || (OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad)).x > 0.4f || (OVRInput.Get(OVRInput.Axis2D.SecondaryTouchpad)).x > 0.4f;
+            bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || (OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad)).y < -0.4f || (OVRInput.Get(OVRInput.Axis2D.SecondaryTouchpad)).y < -0.4f;
 
-			bool dpad_move = false;
+            bool dpad_move = false;
 
 			if (OVRInput.Get(OVRInput.Button.DpadUp))
 			{
